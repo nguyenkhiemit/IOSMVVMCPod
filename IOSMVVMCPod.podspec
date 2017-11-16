@@ -18,6 +18,10 @@ s.source              = { :git => "https://github.com/nguyenkhiemit/IOSMVVMCPod.
 #9.
 s.source_files     = "IOSMVVMCPod", "IOSMVVMCPod/**/*.{h,m,swift}"
 
+# 10
+s.framework = "UIKit"
+s.dependency 'Alamofire'
+
 end
 
 
