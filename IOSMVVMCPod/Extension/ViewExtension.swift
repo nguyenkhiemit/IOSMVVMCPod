@@ -20,7 +20,6 @@ extension UIView {
         tapView.rx.event
             .subscribe({
                 _ in
-                print("CLICK TAP !!!")
                 handler()
             })
         .disposed(by: disposeBag)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppHelper: NSObject {
+public class AppHelper: NSObject {
     
     public func logHelper() {
         print("This is your log")
