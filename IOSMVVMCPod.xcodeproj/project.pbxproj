@@ -12,7 +12,6 @@
 		187AB7EC1FBD8367009DAB46 /* IOSMVVMCPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 187AB7DE1FBD8367009DAB46 /* IOSMVVMCPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		187AB8301FBD85A2009DAB46 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AB82F1FBD85A2009DAB46 /* AppHelper.swift */; };
 		187AB8AA1FBD963B009DAB46 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AB8A61FBD963B009DAB46 /* TargetType.swift */; };
-		187AB8AB1FBD963B009DAB46 /* ClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AB8A71FBD963B009DAB46 /* ClientApi.swift */; };
 		187AB8AC1FBD963B009DAB46 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AB8A81FBD963B009DAB46 /* CommonError.swift */; };
 		187AB8AD1FBD963B009DAB46 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AB8A91FBD963B009DAB46 /* Provider.swift */; };
 		187AB8B51FBD9679009DAB46 /* EmptyTextUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AB8AF1FBD9679009DAB46 /* EmptyTextUtils.swift */; };
@@ -31,6 +30,7 @@
 		187AB8CC1FBD96B7009DAB46 /* UILoading.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187AB8C41FBD96B7009DAB46 /* UILoading.xib */; };
 		187AB8D01FBD96E1009DAB46 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AB8CE1FBD96E1009DAB46 /* ViewExtension.swift */; };
 		187AB8D11FBD96E1009DAB46 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AB8CF1FBD96E1009DAB46 /* StringExtension.swift */; };
+		1883EBDD1FBDD65200419C33 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1883EBDC1FBDD65200419C33 /* BaseCoordinator.swift */; };
 		63C1665E690DC09F26170B84 /* Pods_IOSMVVMCPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77610C5DC7DBA9FC88AEAD8D /* Pods_IOSMVVMCPod.framework */; };
 		D5B4C6BCB5946F28847296FC /* Pods_IOSMVVMCPodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 825FA4A18D4F6807A181E984 /* Pods_IOSMVVMCPodTests.framework */; };
 /* End PBXBuildFile section */
@@ -54,7 +54,6 @@
 		187AB7EB1FBD8367009DAB46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187AB82F1FBD85A2009DAB46 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
 		187AB8A61FBD963B009DAB46 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
-		187AB8A71FBD963B009DAB46 /* ClientApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientApi.swift; sourceTree = "<group>"; };
 		187AB8A81FBD963B009DAB46 /* CommonError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 		187AB8A91FBD963B009DAB46 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		187AB8AF1FBD9679009DAB46 /* EmptyTextUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTextUtils.swift; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		187AB8C41FBD96B7009DAB46 /* UILoading.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UILoading.xib; sourceTree = "<group>"; };
 		187AB8CE1FBD96E1009DAB46 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		187AB8CF1FBD96E1009DAB46 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		1883EBDC1FBDD65200419C33 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		28F36D789612D04DE3FFF966 /* Pods-IOSMVVMCPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSMVVMCPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSMVVMCPod/Pods-IOSMVVMCPod.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4CEE276ED301C479520952 /* Pods-IOSMVVMCPodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSMVVMCPodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSMVVMCPodTests/Pods-IOSMVVMCPodTests.release.xcconfig"; sourceTree = "<group>"; };
 		77610C5DC7DBA9FC88AEAD8D /* Pods_IOSMVVMCPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSMVVMCPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +125,7 @@
 		187AB7DD1FBD8367009DAB46 /* IOSMVVMCPod */ = {
 			isa = PBXGroup;
 			children = (
+				1883EBDA1FBDD62F00419C33 /* Coordinator */,
 				187AB8CD1FBD96C5009DAB46 /* Extension */,
 				187AB8BB1FBD969E009DAB46 /* View */,
 				187AB8AE1FBD9659009DAB46 /* Utility */,
@@ -148,7 +149,6 @@
 		187AB8A51FBD960D009DAB46 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				187AB8A71FBD963B009DAB46 /* ClientApi.swift */,
 				187AB8A81FBD963B009DAB46 /* CommonError.swift */,
 				187AB8A91FBD963B009DAB46 /* Provider.swift */,
 				187AB8A61FBD963B009DAB46 /* TargetType.swift */,
@@ -199,6 +199,14 @@
 				187AB8CE1FBD96E1009DAB46 /* ViewExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		1883EBDA1FBDD62F00419C33 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1883EBDC1FBDD65200419C33 /* BaseCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		1CB1CA16AC279E131B771119 /* Frameworks */ = {
@@ -429,10 +437,10 @@
 				187AB8B61FBD9679009DAB46 /* Utils.swift in Sources */,
 				187AB8C81FBD96B7009DAB46 /* DesignableView.swift in Sources */,
 				187AB8B71FBD9679009DAB46 /* LoadingUtils.swift in Sources */,
-				187AB8AB1FBD963B009DAB46 /* ClientApi.swift in Sources */,
 				187AB8BA1FBD9679009DAB46 /* Constant.swift in Sources */,
 				187AB8C61FBD96B7009DAB46 /* DesignableButton.swift in Sources */,
 				187AB8AD1FBD963B009DAB46 /* Provider.swift in Sources */,
+				1883EBDD1FBDD65200419C33 /* BaseCoordinator.swift in Sources */,
 				187AB8D11FBD96E1009DAB46 /* StringExtension.swift in Sources */,
 				187AB8C91FBD96B7009DAB46 /* UIEmptyText.swift in Sources */,
 				187AB8AC1FBD963B009DAB46 /* CommonError.swift in Sources */,

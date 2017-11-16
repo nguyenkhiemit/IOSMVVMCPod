@@ -54,7 +54,7 @@ class Provider {
 
 extension Provider {
     
-    func requestAPIJSON(api: ClientApi,
+    func requestAPIJSON(api: TargetType,
                         parameters: [String: Any]? = nil,
                         encoding: ParameterEncoding? = nil,
                         headers: [String: String]? = nil)  -> Observable<(HTTPURLResponse, Any)> {
@@ -83,7 +83,7 @@ extension Provider {
         .timeout(networkTimeout, scheduler: backgroundScheduler)
     }
     
-    func requestAPIData(api: ClientApi, parameters: [String: Any]? = nil,
+    func requestAPIData(api: TargetType, parameters: [String: Any]? = nil,
                         headers: [String: String]? = nil, encoding: ParameterEncoding? = nil) -> Observable<(HTTPURLResponse, Data)> {
         let url = api.baseURL + api.path
         
