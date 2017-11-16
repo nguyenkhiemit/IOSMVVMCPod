@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="UILoading" customClass="UILoading" customModule="IOSBaseMVVMC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhR-6u-2U2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqv-Rf-HWX" customClass="DesignableView" customModule="IOSBaseMVVMC" customModuleProvider="target">
+                    <rect key="frame" x="147" y="293" width="80" height="80"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="fde-pI-tDq">
+                            <rect key="frame" x="29.5" y="30" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="a8S-dq-E5y"/>
+                                <constraint firstAttribute="width" constant="20" id="p2m-RB-RvX"/>
+                            </constraints>
+                            <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="2bG-1w-PVk"/>
+                        <constraint firstItem="fde-pI-tDq" firstAttribute="centerX" secondItem="bqv-Rf-HWX" secondAttribute="centerX" id="W5r-qG-lIX"/>
+                        <constraint firstAttribute="height" constant="80" id="cxa-xC-i6Z"/>
+                        <constraint firstItem="fde-pI-tDq" firstAttribute="centerY" secondItem="bqv-Rf-HWX" secondAttribute="centerY" id="oXU-XM-QYn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jhR-6u-2U2" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0VT-DS-5sV"/>
+                <constraint firstItem="bqv-Rf-HWX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6Xn-ay-H3O"/>
+                <constraint firstItem="jhR-6u-2U2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ccw-tl-tpL"/>
+                <constraint firstItem="jhR-6u-2U2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TCY-OM-mbF"/>
+                <constraint firstItem="bqv-Rf-HWX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="U3Y-L5-x5g"/>
+                <constraint firstItem="jhR-6u-2U2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ahC-AQ-ZDK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="activityIndicatorView" destination="fde-pI-tDq" id="O3Z-tS-rJo"/>
+            </connections>
+            <point key="canvasLocation" x="47.5" y="59.5"/>
+        </view>
+    </objects>
+</document>
