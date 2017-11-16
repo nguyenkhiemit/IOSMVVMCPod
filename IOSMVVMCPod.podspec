@@ -21,6 +21,13 @@ s.source_files     = "IOSMVVMCPod", "IOSMVVMCPod/**/*.{h,m,swift}"
 # 10
 s.framework = "UIKit"
 s.dependency 'Alamofire'
+s.dependency 'RxSwift'
+s.dependency 'RxCocoa'
+s.dependency 'RxDataSources'
+s.dependency 'SwiftEventBus'
+s.dependency 'RxAlamofire'
+s.dependency 'SwiftyJSON'
+s.dependency 'ObjectMapper'
 
 end
 

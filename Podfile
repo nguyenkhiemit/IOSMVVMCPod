@@ -13,5 +13,12 @@ target 'IOSMVVMCPod' do
   end
   
   pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'SwiftEventBus'
+  pod 'RxAlamofire'
+  pod 'SwiftyJSON'
+  pod 'ObjectMapper'
 
 end
