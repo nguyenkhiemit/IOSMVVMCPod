@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-func getWidthScreen() -> CGFloat {
+public func getWidthScreen() -> CGFloat {
     let sizeRect = UIScreen.main.bounds
     return sizeRect.width
 }
 
-func getHeightScreen() -> CGFloat {
+public func getHeightScreen() -> CGFloat {
     let sizeRect = UIScreen.main.bounds
     return sizeRect.height
 }
