@@ -8,12 +8,12 @@
 
 import Foundation
 
-extension String {
+public extension String {
     var URLEscapedString: String {
         return self.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlHostAllowed)!
     }
     
-    func localized() -> String {
+    public func localized() -> String {
         let currentLanguage = LanguageUtils.currentLanguage()
         let path = Bundle.main.path(forResource: currentLanguage, ofType: "lproj")
         if let path = path, let bundle = Bundle(path: path) {

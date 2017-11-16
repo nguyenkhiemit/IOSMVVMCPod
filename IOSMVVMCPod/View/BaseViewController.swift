@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class BaseViewController<T>: UIViewController {
+public class BaseViewController<T>: UIViewController {
 
     let disposeBag = DisposeBag()
     
@@ -21,9 +21,9 @@ class BaseViewController<T>: UIViewController {
         configure(viewModel: viewModel)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    func configure(viewModel: T) {}
+    public func configure(viewModel: T) {}
 }

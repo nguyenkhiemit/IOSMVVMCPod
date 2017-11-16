@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 import RxSwift
 
-extension UIView {
+public extension UIView {
     
     typealias TapHandler = (() -> (Void))
     
-    func tap(handler: @escaping TapHandler) {
+    public func tap(handler: @escaping TapHandler) {
         let disposeBag = DisposeBag()
         let tapView = UITapGestureRecognizer()
         tapView.rx.event

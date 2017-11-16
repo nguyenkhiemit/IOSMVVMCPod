@@ -9,9 +9,9 @@
 import UIKit
 
 @IBDesignable
-class DesignableTextField: UITextField {
+public class DesignableTextField: UITextField {
     
-    @IBInspectable var cornerRadius: CGFloat = 0.0 {
+    @IBInspectable public var cornerRadius: CGFloat = 0.0 {
         didSet {
             if cornerRadius != 0 {
                 self.layer.cornerRadius = cornerRadius
@@ -19,13 +19,13 @@ class DesignableTextField: UITextField {
         }
     }
     
-    @IBInspectable var borderColor: UIColor = UIColor.clear {
+    @IBInspectable public var borderColor: UIColor = UIColor.clear {
         didSet {
             self.layer.borderColor = borderColor.cgColor
         }
     }
     
-    @IBInspectable var borderWidth: CGFloat = 0.0 {
+    @IBInspectable public var borderWidth: CGFloat = 0.0 {
         didSet {
             if borderWidth != 0 {
                 self.layer.borderWidth = borderWidth
@@ -33,43 +33,43 @@ class DesignableTextField: UITextField {
         }
     }
     
-    @IBInspectable var leftImage: UIImage? {
+    @IBInspectable public var leftImage: UIImage? {
         didSet {
             updateView()
         }
     }
     
-    @IBInspectable var rightImage: UIImage? {
+    @IBInspectable public var rightImage: UIImage? {
         didSet {
             updateView()
         }
     }
     
-    @IBInspectable var paddingImageToBorder: CGFloat = 0.0 {
+    @IBInspectable public var paddingImageToBorder: CGFloat = 0.0 {
         didSet {
             updateView()
         }
     }
     
-    @IBInspectable var widthImage: CGFloat = 0.0 {
+    @IBInspectable public var widthImage: CGFloat = 0.0 {
         didSet {
             updateView()
         }
     }
     
-    @IBInspectable var heightImage: CGFloat = 0.0 {
+    @IBInspectable public var heightImage: CGFloat = 0.0 {
         didSet {
             updateView()
         }
     }
     
-    @IBInspectable var paddingImageToTitle: CGFloat = 0.0 {
+    @IBInspectable public var paddingImageToTitle: CGFloat = 0.0 {
         didSet {
             updateView()
         }
     }
     
-    func updateView() {
+    public func updateView() {
         if let leftImage = leftImage {
             leftViewMode = .always
             let imageView = UIImageView(frame: CGRect(x: paddingImageToBorder, y: 0, width: widthImage, height: heightImage))

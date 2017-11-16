@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum CommonError : Error {
+public enum CommonError : Error {
     case parsingError
     case networkError
 }

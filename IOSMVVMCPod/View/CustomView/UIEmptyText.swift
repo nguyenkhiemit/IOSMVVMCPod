@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIEmptyText: UIView {
+public class UIEmptyText: UIView {
 
     @IBOutlet weak var emptyLabel: UILabel!
 

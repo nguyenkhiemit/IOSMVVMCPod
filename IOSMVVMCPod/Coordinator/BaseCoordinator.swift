@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-class BaseCoordinator {
+public class BaseCoordinator {
     
     var childCoordinators: [BaseCoordinator] = []
     
     var navigationController: UINavigationController?
     
-    init(navigationController: UINavigationController?) {
+    public init(navigationController: UINavigationController?) {
         self.navigationController = navigationController
     }
     
-    func start() {}
+    public func start() {}
 }

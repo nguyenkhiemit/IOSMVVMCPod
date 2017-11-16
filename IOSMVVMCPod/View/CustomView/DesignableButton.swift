@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc enum DesignableButtonStyle: Int {
+@objc public enum DesignableButtonStyle: Int {
     case Regular = 0
     case Light
     case Dark
@@ -17,15 +17,15 @@ import UIKit
 }
 
 @IBDesignable
-class DesignableButton: UIButton {
+public class DesignableButton: UIButton {
     
-    @IBInspectable var buttonStyle: DesignableButtonStyle = .Alert {
+    @IBInspectable public var buttonStyle: DesignableButtonStyle = .Alert {
         didSet {
             buttonStyleNumber = buttonType.rawValue
         }
     }
     
-    @IBInspectable var buttonStyleNumber: Int = 0 {
+    @IBInspectable public var buttonStyleNumber: Int = 0 {
         didSet {
             switch buttonStyleNumber {
             case DesignableButtonStyle.Light.rawValue:
@@ -52,7 +52,7 @@ class DesignableButton: UIButton {
         }
     }
     
-    @IBInspectable var cornerRadius: CGFloat = 0.0 {
+    @IBInspectable public var cornerRadius: CGFloat = 0.0 {
         didSet {
             if cornerRadius != 0 {
                 self.layer.cornerRadius = cornerRadius
@@ -60,13 +60,13 @@ class DesignableButton: UIButton {
         }
     }
     
-    @IBInspectable var verticalPadding: CGFloat = 0 {
+    @IBInspectable public var verticalPadding: CGFloat = 0 {
         didSet {
             contentEdgeInsets = UIEdgeInsetsMake(verticalPadding, horizontalPadding, verticalPadding, horizontalPadding)
         }
     }
     
-    @IBInspectable var horizontalPadding: CGFloat = 0 {
+    @IBInspectable public var horizontalPadding: CGFloat = 0 {
         didSet {
             contentEdgeInsets = UIEdgeInsetsMake(verticalPadding, horizontalPadding, verticalPadding, horizontalPadding)
         }

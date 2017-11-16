@@ -8,13 +8,13 @@
 
 import UIKit
 
-class LoadingUtils: NSObject {
+public class LoadingUtils: NSObject {
     
-    static func loadNib() -> UILoading? {
+    public static func loadNib() -> UILoading? {
         return Bundle.main.loadNibNamed("UILoading", owner: self, options: nil)?.first as? UILoading
     }
     
-    static func show() {
+    public static func show() {
         guard let window = UIApplication.shared.keyWindow else {
             return
         }
@@ -26,7 +26,7 @@ class LoadingUtils: NSObject {
         }
     }
     
-    static func close() {
+    public static func close() {
         guard let window = UIApplication.shared.keyWindow else {
             return
         }

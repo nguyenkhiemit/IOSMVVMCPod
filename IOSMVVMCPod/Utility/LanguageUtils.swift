@@ -8,11 +8,11 @@
 
 import Foundation
 
-class LanguageUtils {
-    class func currentLanguage() -> String? {
+public class LanguageUtils {
+    public class func currentLanguage() -> String? {
         return UserDefaults.standard.string(forKey: LANGUAGE_KEY)
     }
-    class func setLanguageTo(lang: String) {
+    public class func setLanguageTo(lang: String) {
         let userdef = UserDefaults.standard
         userdef.set(lang, forKey: LANGUAGE_KEY)
         userdef.synchronize()

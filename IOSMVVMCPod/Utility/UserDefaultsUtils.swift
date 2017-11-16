@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum UserDefaultsKey: String {
+public enum UserDefaultsKey: String {
     case authExpires = "authExpires-key"
     case authRefreshToken = "authRefreshToken-key"
     case authScope = "authScope-key"
@@ -16,20 +16,20 @@ enum UserDefaultsKey: String {
     case authAccessToken = "authAccessToken-key"
 }
 
-class UserDefaultUtils {
+public class UserDefaultUtils {
     
     static let instance = UserDefaultUtils()
     
-    func save<T>(key: UserDefaultsKey, value: T) {
+    public func save<T>(key: UserDefaultsKey, value: T) {
         UserDefaults.standard.set(value, forKey: key.rawValue)
         UserDefaults.standard.synchronize()
     }
     
-    func get(key: UserDefaultsKey) -> Any? {
+    public func get(key: UserDefaultsKey) -> Any? {
         return UserDefaults.standard.value(forKey: key.rawValue)
     }
     
-    func isValiAccessToken() -> Bool {
+    public func isValiAccessToken() -> Bool {
         guard let expired = get(key: .authExpires) as? Double else {
             return false
         }
@@ -37,7 +37,7 @@ class UserDefaultUtils {
         return fabs(dateFromExpired.timeIntervalSinceNow) > 86400
     }
     
-    func getAccessTokenWithValidate() -> String? {
+    public func getAccessTokenWithValidate() -> String? {
         guard let tokenType = getTokenType() else {
             return nil
         }
@@ -49,23 +49,23 @@ class UserDefaultUtils {
         return "\(tokenType) \(accessToken)"
     }
     
-    func getExpriesIn() -> TimeInterval? {
+    public func getExpriesIn() -> TimeInterval? {
         return get(key: .authExpires) as? TimeInterval
     }
     
-    func getRefreshToken() -> String? {
+    public func getRefreshToken() -> String? {
         return get(key: .authRefreshToken) as? String
     }
     
-    func getScope() -> String? {
+    public func getScope() -> String? {
         return get(key: .authScope) as? String
     }
     
-    func getTokenType() -> String? {
+    public func getTokenType() -> String? {
         return get(key: .authTokenType) as? String
     }
     
-    func getAccessToken() -> String? {
+    public func getAccessToken() -> String? {
         return get(key: .authAccessToken) as? String
     }
 }

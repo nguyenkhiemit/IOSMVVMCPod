@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-class UILoading: UIView {
+public class UILoading: UIView {
     
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
-    func show() {
+    public func show() {
         activityIndicatorView.startAnimating()
     }
     
-    func dismiss() {
+    public func dismiss() {
         activityIndicatorView.stopAnimating()
     }
 }

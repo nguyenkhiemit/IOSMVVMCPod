@@ -12,7 +12,7 @@ import Alamofire
 import RxSwift
 import RxCocoa
 
-class Provider {
+public class Provider {
     
     fileprivate let networkTimeout: TimeInterval = 30.0
     
@@ -54,7 +54,7 @@ class Provider {
 
 extension Provider {
     
-    func requestAPIJSON(api: TargetType,
+    public func requestAPIJSON(api: TargetType,
                         parameters: [String: Any]? = nil,
                         encoding: ParameterEncoding? = nil,
                         headers: [String: String]? = nil)  -> Observable<(HTTPURLResponse, Any)> {
@@ -83,7 +83,7 @@ extension Provider {
         .timeout(networkTimeout, scheduler: backgroundScheduler)
     }
     
-    func requestAPIData(api: TargetType, parameters: [String: Any]? = nil,
+    public func requestAPIData(api: TargetType, parameters: [String: Any]? = nil,
                         headers: [String: String]? = nil, encoding: ParameterEncoding? = nil) -> Observable<(HTTPURLResponse, Data)> {
         let url = api.baseURL + api.path
         
