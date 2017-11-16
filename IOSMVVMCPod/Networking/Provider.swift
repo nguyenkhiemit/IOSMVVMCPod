@@ -18,6 +18,10 @@ public class Provider {
     
     fileprivate let backgroundScheduler = ConcurrentDispatchQueueScheduler(qos: .background)
     
+    public init() {
+        
+    }
+    
     fileprivate func getDefaultHeaderTypeJSON() -> [String: String] {
         var headers = [String: String]()
         headers["Content-Type"] = "application/json; charset=UTF-8"
